@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Inter, sans-serif;
+  font-family: Karla, sans-serif;
 }
 
 div#root {
@@ -27,7 +27,7 @@ main {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -37,14 +37,28 @@ main {
   gap: 20px;
 }
 
+button {
+  font-family: Karla, sans-serif;
+  cursor: pointer;
+}
+
 .die {
   border: none;
   border-radius: 10px;
   box-shadow: 0 2px 2px  rgba(0,0,0,0.15);
   font-weight: bold;
-  font-family: Inter, sans-serif;
   font-size: 1.75rem;
   background-color: white;
-  cursor: pointer;
+}
+
+.roll-dice {
+  height: 50px;
+  width: 100px;
+  background-color: #5D35FF;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
 }
 

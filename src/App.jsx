@@ -18,10 +18,18 @@ const App = () => {
 
   function rollDice() {
     setDice(generateAllNewDice())
-    console.log(dice)
   }
 
-  const diceElements = dice.map((die) =>  <Die key={die.id} value={die.value}/>)
+  function hold(id) {
+    const numberHeld = (dice.find(die => die.id === id)).value;  
+    setDice((prevDice) => prevDice.map( 
+      die => (die.value === numberHeld) ? {...die, isHeld: !die.isHeld} : die
+    ));
+  }
+
+  const diceElements = dice.map(
+    (die) =>  <Die key={die.id} id={die.id} hold={hold} held={die.isHeld} value={die.value}/>
+  )
 
   return (
     <main>

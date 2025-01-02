@@ -1,8 +1,11 @@
 
 
-const Die = ({value}) => {
+const Die = (props) => {
   return (
-    <button className="die">{value}</button>
+    <button 
+      onClick={() => props.hold(props.id)} 
+      style={{backgroundColor: props.held ? "#59E391" : "white"}}      
+    >{props.value}</button>
   )
 }
 

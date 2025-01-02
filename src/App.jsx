@@ -2,9 +2,7 @@
 function App() { 
 
   return (
-    <main>
-      
-    </main>
+    <main></main>
   )
 }
 

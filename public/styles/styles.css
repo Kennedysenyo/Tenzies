@@ -66,7 +66,9 @@ button {
 
 .roll-dice {
   height: 50px;
-  width: 100px;
+  white-space: nowrap;
+  padding: 6px 21px;
+  width: auto;
   background-color: #5D35FF;
   color: white;
   font-size: 1.2rem;
@@ -74,5 +76,4 @@ button {
   border: none;
   border-radius: 6px;
 }
-
 
